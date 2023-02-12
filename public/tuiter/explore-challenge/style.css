@@ -1,0 +1,66 @@
+.list-group a {
+  border: none;
+}
+
+.wd-my-list-item {
+  border: none;
+  background-color: rgb(240, 238, 238);
+}
+
+.wd-my-list-item1 {
+  border: none;
+}
+
+.wd-nav-link {
+  color: rgb(81, 80, 80);
+  font-weight: bold;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.wd-btn-color {
+  background-color: black;
+}
+
+#show-more {
+  text-decoration: none;
+}
+
+#for-you {
+  border-bottom: 4px solid blue;
+}
+
+.wd-text-overlay {
+  color: honeydew;
+  font-size: 20px;
+}
+
+.wd-side-bar-links{
+    text-decoration: none;
+    color: gray;
+    padding-left: 20px;
+}
+
+.wd-text-color {
+  color: rgb(124, 121, 121);
+}
+#bar-id {
+  text-decoration: none;
+}
+
+.fa-stack.wd-small {
+  font-size: 0.5em;
+}
+@media (max-width: 768px) {
+  .wd-cog {
+    padding-left: 6px;
+  }
+}
+/* Larger devices */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .btn.wd-media-query {
+    width: 120% !important;
+  }
+}
