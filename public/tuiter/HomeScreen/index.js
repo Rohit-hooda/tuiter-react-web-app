@@ -1,5 +1,6 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
-import ExploreComponent from "../ExploreScreen/ExploreComponent.js";
+// import PostItem from "../itempost/index.js";
+import postListItems from "../PostList/index.js"
 function exploreComponent() {
   $("#wd-explore").append(`
       <a href="../navigation.html">Go Back</a>
@@ -8,7 +9,7 @@ function exploreComponent() {
         ${NavigationSidebar()}
         </div>
         <div class="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6">
-       ${ExploreComponent()}
+       ${postListItems()}
         </div>
       </div>
     `)
