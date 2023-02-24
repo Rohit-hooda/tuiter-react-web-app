@@ -11,7 +11,7 @@ const ExploreComponent = () => {
         <div className="row mt-2">
             <Nav/>
             <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
-                <NavigationSidebar active="Explore"/>
+                <NavigationSidebar/>
             </div>
             <div className="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6">
                 <div className="row">

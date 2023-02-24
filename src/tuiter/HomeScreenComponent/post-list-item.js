@@ -1,25 +1,38 @@
 import React from "react";
+import {
+    faArrowUpFromBracket,
+    faComment,
+    faEllipsis,
+    faHeart,
+    faRetweet
+} from "@fortawesome/free-solid-svg-icons";
+
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const PostListItem = ({post}) => {
     return (
         <li className="list-group-item">
             <div className="row align-top">
-                <div className="col-1"><img src={`/images/{post.avatar}`}
-                                            className="rounded-circle"
-                                            width={45} alt={"Avatar"}/>
+                <div className="col-1">
+                    <img src={`../images/${post.avatar}`}
+                         className="rounded-circle"
+                         width={45} alt={"Avatar"}></img>
                 </div>
                 <div className="col-10">
                       <span><b>{post.userName}</b>
                       <i className="fa-solid fa-circle-check"></i>
-                      </span>
-                    <span style={{color: "darkgray"}}>${post.annotation}</span>
+                      </span><br/>
+                    <span style={{color: "darkgray"}}>{post.annotation}</span> <br/>
                     <span>{post.title}</span>
                 </div>
-                <div className="col-1"><i className="fa-solid fa-ellipsis"></i></div>
+                <div className="col-1">
+                    <FontAwesomeIcon className={"fa-solid"} icon={faEllipsis}/>
+                </div>
             </div>
 
             <div className="card wd-article-card rounded-5 ms-4 mt-1">
-                <img className="card-img-top rounded-5 " src={`/images/{post.image}`}/>
+                <img className="card-img-top rounded-5 " src={`../images/${post.image}`}
+                     style={{height: 450}}/>
                 {post.card_title === undefined ? '' : `
                       <div className="card-body">           
                           <h6 className="card-title" style={{color: "lightgrey"}}>{post.card_title}</h6>
@@ -30,19 +43,29 @@ const PostListItem = ({post}) => {
 
             <div className="row mt-3 ms-5">
               <span className="col-3">
-                <a><i className="fa-regular fa-comment wd-icon-config"></i></a>
+                <a>
+                    <FontAwesomeIcon className={"fa-regular wd-icon-config"} icon={faComment}/>
+                </a>
                 <span> {post.comments}</span>
               </span>
                 <span className="col-3">
-                <a><i className="fa-solid fa-retweet wd-icon-config"></i></a>
+                <a>
+                    <FontAwesomeIcon className={"fa-regular wd-icon-config"} icon={faRetweet}/>
+                </a>
                 <span> {post.retweets}</span>
               </span>
                 <span className="col-3">
-                <a className="wd-likes-red"><i className="fa-solid fa-heart wd-icon-config"></i></a>
+                <a style={{color: "red"}}>
+                    <FontAwesomeIcon className={"fa-solid wd-icon-config"}
+                                     icon={faHeart}/>
+                  </a>
                 <span> {post.likes}</span>
               </span>
                 <span className="col-3">
-                <a><i className="fa-solid fa-arrow-up-from-bracket wd-icon-config"></i></a>
+                <a>
+                    <FontAwesomeIcon className={"fa-solid wd-icon-config"}
+                                     icon={faArrowUpFromBracket}/>
+                </a>
                 <span></span>
               </span>
             </div>
