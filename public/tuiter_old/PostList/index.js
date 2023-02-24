@@ -2,13 +2,13 @@ import posts from "./posts.js";
 import postListItem from "./postListItems.js";
 
 function postListItems() {
-  return `
+    return `
       <ul class="list-group list-group-flush">
         ${posts
-          .map((post) => {
+        .map((post) => {
             return postListItem(post);
-          })
-          .join("")}
+        })
+        .join("")}
      </ul>
   `;
 }

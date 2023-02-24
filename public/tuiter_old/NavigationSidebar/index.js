@@ -17,11 +17,13 @@ const NavigationSidebar = (active) => {
             <i class="d-inline fab fa-twitter"></i>
             <span class="d-none d-xl-inline"></span>
         </a>
-        <a href="/tuiter/HomeScreen/index.html" class="list-group-item ${active === "Home" ? 'active' : ''}">
+        <a href="/tuiter_old/HomeScreen/index.html" class="list-group-item ${active === "Home"
+                                                                             ? 'active' : ''}">
             <i class="d-inline fas fa-home"></i>
             <span class="d-none d-xl-inline">Home</span>
         </a>
-        <a href="/tuiter/explore_JS/index.html" class="list-group-item ${active === "Explore" ? 'active' : ''}">
+        <a href="/tuiter_old/explore_JS/index.html" class="list-group-item ${active === "Explore"
+                                                                             ? 'active' : ''}">
             <i class="d-inline fas fa-hashtag"></i>
             <span class="d-none d-xl-inline">Explore</span>
         </a>

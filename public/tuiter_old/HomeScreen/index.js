@@ -1,6 +1,6 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
-// import PostItem from "../itempost/index.js";
 import postListItems from "../PostList/index.js"
+
 function exploreComponent() {
   $("#wd-explore").append(`
       <a href="../navigation.html">Go Back</a>

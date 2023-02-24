@@ -1,7 +1,8 @@
 function PostSummaryItems(post) {
   return `${post
     .map(
-      (post) => ` <li class="list-group-item">
+      (post) => ` 
+       <li class="list-group-item">
         <div class="row">
             <div class="col-9 col-md-10">
                 <div class="text-secondary">${post.topic}</div>
