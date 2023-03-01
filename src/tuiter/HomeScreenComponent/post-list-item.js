@@ -33,11 +33,11 @@ const PostListItem = ({post}) => {
             <div className="card wd-article-card rounded-5 ms-4 mt-1">
                 <img className="card-img-top rounded-5 " src={`../images/${post.image}`}
                      style={{height: 450}}/>
-                {post.card_title === undefined ? '' : `
+                {post.card_title === undefined ? '' :
                       <div className="card-body">           
-                          <h6 className="card-title" style={{color: "lightgrey"}}>{post.card_title}</h6>
+                          <h6 className="card-title" style={{color: "grey"}}>{post.card_title}</h6>
                           <p className="card-text" style={{color: "darkgray"}}>{post.card_content}</p>
-                      </div>`
+                      </div>
                 }
             </div>
 
