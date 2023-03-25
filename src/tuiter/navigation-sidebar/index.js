@@ -1,6 +1,7 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
+    faAsterisk,
     faBell,
     faBookmark,
     faEnvelope,
@@ -36,6 +37,12 @@ const NavigationSidebar = () => {
                   className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
                 <FontAwesomeIcon className={"d-inline"} icon={faHashtag}/>
                 <span className="d-none d-xl-inline"> Explore</span>
+            </Link>
+
+            <Link to="/"
+                  className={`list-group-item ${active === 'labs' ? 'active' : ''}`}>
+                <FontAwesomeIcon className={"d-inline"} icon={faAsterisk}/>
+                <span className="d-none d-xl-inline"> Labs</span>
             </Link>
 
             <Link to="/tuiter/notifications"

@@ -1,6 +1,6 @@
 import Assignment6 from "./a6";
 import Assignment7 from "./a7";
-import {Routes, Route} from "react-router";
+import {Route, Routes} from "react-router";
 
 function Labs() {
     return (
