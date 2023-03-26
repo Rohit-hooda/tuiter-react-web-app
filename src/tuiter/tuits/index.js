@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import TuitItem from "./tuit-item";
 import {useSelector} from "react-redux";
 

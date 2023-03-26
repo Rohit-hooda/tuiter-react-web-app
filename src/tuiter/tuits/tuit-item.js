@@ -6,7 +6,6 @@ import {
     faCircle,
     faCircleCheck,
     faComment,
-    faEllipsis,
     faHeart,
     faRetweet,
     faX
