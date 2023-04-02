@@ -1,18 +1,14 @@
 import React from "react";
-import TuitItem from "./tuit-item";
-import {useSelector} from "react-redux";
+import TuitList from "./tuits-list"
 
-function TuitStats() {
-    const tuitsArray = useSelector((state) => state.tuits);
-    return (
+const Tuits = () => {
+    return(
         <>
-            <ul className="list-group list-group-flush">
-                {
-                    tuitsArray.map(tuit => <TuitItem key={tuit.id} tuit={tuit}/>)
-                }
-            </ul>
+            {/*<h1>Home</h1>*/}
+            {/*<WhatsHappening/>*/}
+            <TuitList/>
         </>
-    )
-}
+    );
+};
+export default Tuits;
 
-export default TuitStats;

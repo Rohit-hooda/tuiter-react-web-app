@@ -2,7 +2,6 @@ import React from "react";
 import {useSelector} from "react-redux";
 import EditProfileDisplay from "./edit-profile";
 import NavigationSidebar from "../navigation-sidebar";
-import ProfileDisplay from "../ProfileComponent/profile";
 import WhoToFollowList from "../who-to-follow-list";
 
 const EditProfile = () => {

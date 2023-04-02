@@ -23,7 +23,6 @@ function Tuiter() {
                 <Route path="edit-profile" element={<EditProfileInformation/>}/>
             </Routes>
         </Provider>
-
     );
 }
 
