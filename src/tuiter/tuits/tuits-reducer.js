@@ -10,7 +10,7 @@ import {
 const currentUser = {
     "userName": "NASA",
     "handle": "@nasa",
-    "avatar": "download.png",
+    "avatar": "avatar.png",
 };
 
 const templateTuit = {
